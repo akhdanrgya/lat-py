@@ -12,9 +12,13 @@ window = pygame.display.set_mode((window_l, window_p))
 
 
 #  object game
-# posisi
-x = 250
-y = 250
+# posisi 1
+x = 300
+y = 200
+
+# posisi 2
+x2 = 300
+y2 = 300
 
 # ukuran
 panjang = 20
@@ -30,13 +34,11 @@ while isRun:
     # user input, database input
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            print("ANJAAAYY")
             isRun = False
-
 
     # ambil semua keyboard press / action
     keys = pygame.key.get_pressed()
-    
+
     # ambil ke kiri
     if keys[pygame.K_a] and x > 0:
         x -= speed
@@ -46,13 +48,15 @@ while isRun:
 
     if keys[pygame.K_s] and y < window_p - panjang:
         y += speed
-        
+
     if keys[pygame.K_w] and y > 0:
         y -= speed
-        
+
+
     # update asset
     window.fill((255, 255, 255))
     pygame.draw.rect(window, (255, 120, 0), (x, y, lebar, panjang))
+    pygame.draw.rect(window, (0,255,0), (x2, y2, lebar, panjang) )
     # render ke display
     pygame.display.update()
 
