@@ -28,7 +28,7 @@ print(50 * "=" + "\n")
 # Menduplikat data
 print("Menduplikat list dengan copy (.copy)")
 
-c = a.copy() # data baru atau copy
+c = a.copy()  # data baru atau copy
 
 print(f"address a = {hex(id(a))}")
 print(f"address b = {hex(id(b))}")
@@ -38,10 +38,9 @@ print(f"a = {a}")
 print(f"b = {b}")
 print(f"c = {c}")
 
-print ("kita ubah data index ke 0")
+print("kita ubah data index ke 0")
 
 c[0] = "adan"
 print(f"a = {a}")
 print(f"b = {b}")
 print(f"c = {c}")
-

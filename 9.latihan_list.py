@@ -22,8 +22,3 @@ while True:
 
 
 print("\nProgram selesai")
-
-
-
-
-

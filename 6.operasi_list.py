@@ -3,7 +3,7 @@
 
 # Mengitung banyaknya data (count)
 
-data = [1,2,4,4,3,2,5,6,5,5,6,6,2,1,]
+data = [1, 2, 4, 4, 3, 2, 5, 6, 5, 5, 6, 6, 2, 1,]
 
 print(f"Data nya adalah : {data}")
 
@@ -18,13 +18,13 @@ print(50 * "=" + "\n")
 
 # Mencari index dari data (index)
 
-data2 = ["dudung","ucup", "asep", "agus"]
+data2 = ["dudung", "ucup", "asep", "agus"]
 
-print (f"Data nama adalah : {data2}")
+print(f"Data nama adalah : {data2}")
 
 index_ucup = data2.index("ucup")
 
-print (f"index data dari ucup adalah : {index_ucup}")
+print(f"index data dari ucup adalah : {index_ucup}")
 
 
 print(50 * "=" + "\n")
@@ -41,6 +41,3 @@ print(50 * "=" + "\n")
 
 data.reverse()
 print(f"data sesudah di reverse = \n {data}")
-
-
-
